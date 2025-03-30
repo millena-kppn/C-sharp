@@ -20,12 +20,14 @@ namespace Aplicativo_de_Janela_Windows
 
         private void ButtonOk_Click(object sender, EventArgs e)
         {
-            CaixadeTexto.Text = "Millena";
+            string nome = CaixadeTexto.Text;
+            CaixadeTexto.Text = $"Bem vindo(a) {nome}!";    
+
         }
 
         private void ButtonCancelar_Click(object sender, EventArgs e)
         {
-            CaixadeTexto.Text = "Ação cancelada!";
+            CaixadeTexto.Text = "Nome excluido!";
         }
 
         private void ButtonSair_Click(object sender, EventArgs e)
